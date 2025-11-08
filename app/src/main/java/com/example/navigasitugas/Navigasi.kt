@@ -35,3 +35,7 @@ fun AppNavigation(
                 SplashScreen(navController = navController)
             }
 
+            composable(route = Navigasi.ListPeserta.name) {
+                ListPesertaScreen(navController = navController)
+            }
+
