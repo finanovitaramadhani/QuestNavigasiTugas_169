@@ -92,3 +92,46 @@ fun ListPesertaScreen(navController: NavController) {
             }
             Spacer(modifier = Modifier.height(16.dp))
 
+            Card(
+                modifier = Modifier.fillMaxWidth(),
+                elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
+            ) {
+                Row(
+                    modifier = Modifier.fillMaxWidth().padding(16.dp),
+                    horizontalArrangement = Arrangement.SpaceBetween
+                ) {
+
+                    Column(modifier = Modifier.weight(1f)) {
+                        Text(
+                            text = stringResource(id = R.string.nama_lengkap),
+                            fontWeight = FontWeight.Bold
+                        )
+                        Text("Fina Novita")
+                        Spacer(modifier = Modifier.height(8.dp))
+
+                        Text(
+                            text = stringResource(id = R.string.status_perkawinan),
+                            fontWeight = FontWeight.Bold
+                        )
+                        Text("Lajang")
+                    }
+
+                    Column(modifier = Modifier.weight(1f).padding(start = 8.dp)) {
+                        Text(
+                            text = stringResource(id = R.string.jenis_kelamin),
+                            fontWeight = FontWeight.Bold
+                        )
+                        Text("Perempuan")
+                        Spacer(modifier = Modifier.height(8.dp))
+
+                        Text(
+                            text = stringResource(id = R.string.alamat),
+                            fontWeight = FontWeight.Bold
+                        )
+                        Text("Bantul")
+                    }
+                }
+            }
+        }
+    }
+}
