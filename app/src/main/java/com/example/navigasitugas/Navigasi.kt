@@ -39,3 +39,15 @@ fun AppNavigation(
                 ListPesertaScreen(navController = navController)
             }
 
+            composable(route = Navigasi.FormPendaftaran.name) {
+                FormPendaftaranScreen(navController = navController)
+            }
+        }
+    }
+}
+
+fun cancelAndBackToListPeserta(
+    navController: NavController
+) {
+    navController.popBackStack(Navigasi.ListPeserta.name, inclusive = false)
+}
