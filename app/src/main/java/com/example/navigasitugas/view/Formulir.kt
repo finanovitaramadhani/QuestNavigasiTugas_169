@@ -143,7 +143,7 @@ fun FormPendaftaranScreen(navController: NavController) {
 }
 
 @Composable
-fun SuccessDialog (
+fun SuccessDialog(
     nama: String,
     jenisKelamin: String,
     status: String,
@@ -164,3 +164,38 @@ fun SuccessDialog (
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier.padding(bottom = 16.dp)
                 )
+                Column(horizontalAlignment = Alignment.Start) {
+                    DetailRow(label = stringResource(id = R.string.nama_lengkap), value = nama)
+                    DetailRow(label = stringResource(id = R.string.jenis_kelamin), value = jenisKelamin)
+                    DetailRow(label = stringResource(id = R.string.status_perkawinan), value = status)
+                    DetailRow(label = stringResource(id = R.string.alamat), value = alamat)
+                }
+
+                Spacer(modifier = Modifier.height(24.dp))
+
+                Button(onClick = onDismiss, modifier = Modifier.align(Alignment.End)) {
+                    Text(stringResource(id = R.string.button_ok))
+                }
+            }
+        }
+    }
+}
+
+@Composable
+fun DetailRow(label: String, value: String) {
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.Start
+    ) {
+        Text(
+            text = label,
+            modifier = Modifier.width(110.dp)
+        )
+
+        Text(
+            text = value,
+            modifier = Modifier.weight(1f).padding(start = 16.dp)
+        )
+    }
+    Spacer(modifier = Modifier.height(4.dp))
+}
