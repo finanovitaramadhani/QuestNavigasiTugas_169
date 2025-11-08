@@ -143,7 +143,7 @@ fun FormPendaftaranScreen(navController: NavController) {
 }
 
 @Composable
-fun SuccessDialog(
+fun SuccessDialog (
     nama: String,
     jenisKelamin: String,
     status: String,
