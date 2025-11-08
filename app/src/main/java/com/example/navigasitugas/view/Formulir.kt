@@ -127,3 +127,40 @@ fun FormPendaftaranScreen(navController: NavController) {
         }
     }
 
+    if (showSuccessDialog) {
+        SuccessDialog(
+            nama = namaLengkap,
+            jenisKelamin = jenisKelamin,
+            status = statusKawin,
+            alamat = alamat,
+            onDismiss = {
+                navController.navigate(Navigasi.ListPeserta.name) {
+                    popUpTo(Navigasi.ListPeserta.name) { inclusive = true }
+                }
+            }
+        )
+    }
+}
+
+@Composable
+fun SuccessDialog(
+    nama: String,
+    jenisKelamin: String,
+    status: String,
+    alamat: String,
+    onDismiss: () -> Unit
+) {
+    Dialog(onDismissRequest = onDismiss) {
+        Card(
+            shape = MaterialTheme.shapes.extraLarge,
+            modifier = Modifier.fillMaxWidth(0.9f)
+        ) {
+            Column(
+                modifier = Modifier.padding(24.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Text(
+                    text = stringResource(id = R.string.data_berhasil),
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier.padding(bottom = 16.dp)
+                )
