@@ -40,4 +40,12 @@ fun ListPesertaScreen(navController: NavController) {
                 ) { Text(stringResource(id = R.string.formulir)) }
             }
         }
-    ) {
+    ) { paddingValues ->
+
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(paddingValues)
+                .padding(horizontal = 16.dp, vertical = 16.dp)
+        ) {
+
