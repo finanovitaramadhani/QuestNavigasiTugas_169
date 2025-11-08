@@ -98,3 +98,32 @@ fun FormPendaftaranScreen(navController: NavController) {
                 }
             }
 
+            Row(
+                modifier = Modifier.fillMaxWidth().padding(top = 16.dp),
+                horizontalArrangement = Arrangement.SpaceBetween
+            ) {
+                Button(
+                    onClick = {
+                        navController.navigate(Navigasi.ListPeserta.name) {
+                            popUpTo(Navigasi.ListPeserta.name) { inclusive = true }
+                        }
+                    },
+                    modifier = Modifier.weight(1f).padding(end = 8.dp),
+                    colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.secondary)
+                ) {
+                    Text(stringResource(id = R.string.beranda)) // Diperbarui
+                }
+                Button(
+                    onClick = {
+                        if (namaLengkap.isNotBlank() && alamat.isNotBlank()) {
+                            showSuccessDialog = true
+                        }
+                    },
+                    modifier = Modifier.weight(1f).padding(start = 8.dp)
+                ) {
+                    Text(stringResource(id = R.string.submit))
+                }
+            }
+        }
+    }
+
