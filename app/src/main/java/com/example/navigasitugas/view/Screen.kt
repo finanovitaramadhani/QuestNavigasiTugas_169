@@ -32,3 +32,24 @@ fun SplashScreen(navController: NavController) {
             fontWeight = FontWeight.Bold
         )
 
+        Column(horizontalAlignment = Alignment.CenterHorizontally) {
+            Image(
+                painter = painterResource(id = R.drawable.logo_tennis),
+                contentDescription = stringResource(id = R.string.logo_description),
+                modifier = Modifier
+                    .size(200.dp)
+                    .padding(bottom = 32.dp)
+            )
+
+            Text(
+                text = "Fina Novita Ramadhani",
+                fontSize = 18.sp,
+                modifier = Modifier.padding(bottom = 4.dp)
+            )
+
+            Text(
+                text = "20230140169",
+                fontSize = 18.sp
+            )
+        }
+
