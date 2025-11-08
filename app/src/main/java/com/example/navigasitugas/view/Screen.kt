@@ -63,3 +63,7 @@ fun SplashScreen(navController: NavController) {
                 .fillMaxWidth()
                 .height(56.dp)
         ) {
+            Text(stringResource(id = R.string.button_masuk), fontSize = 20.sp)
+        }
+    }
+}
