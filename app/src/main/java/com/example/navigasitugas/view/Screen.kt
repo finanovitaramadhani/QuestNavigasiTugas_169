@@ -53,3 +53,13 @@ fun SplashScreen(navController: NavController) {
             )
         }
 
+        Button(
+            onClick = {
+                navController.navigate(Navigasi.ListPeserta.name) {
+                    popUpTo(Navigasi.Splash.name) { inclusive = true }
+                }
+            },
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(56.dp)
+        ) {
