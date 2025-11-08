@@ -1,5 +1,3 @@
-List Peserta
-
 package com.example.navigasitugas.view
 
 import androidx.compose.foundation.layout.*
