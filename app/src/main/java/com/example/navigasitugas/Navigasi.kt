@@ -23,3 +23,11 @@ enum class Navigasi {
 fun AppNavigation(
     navController: NavHostController = rememberNavController()
 ) {
+    Scaffold { isiRuang ->
+        NavHost(
+            navController = navController,
+            startDestination = Navigasi.Splash.name,
+
+            modifier = Modifier.padding(isiRuang)
+        ) {
+
