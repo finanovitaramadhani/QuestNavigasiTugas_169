@@ -26,3 +26,9 @@ fun SplashScreen(navController: NavController) {
         verticalArrangement = Arrangement.SpaceAround
     ) {
 
+        Text(
+            text = stringResource(id = R.string.selamat_datang),
+            fontSize = 32.sp,
+            fontWeight = FontWeight.Bold
+        )
+
