@@ -1,5 +1,28 @@
 <resources>
     <string name="app_name">NavigasiTugas</string>
 
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="logo_description">logo</string>
+    <string name="button_masuk">Masuk</string>
 
+    <string name="list_daftarpeserta">List Daftar Peserta</string>
+    <string name="beranda">Beranda</string>
+    <string name="formulir">Formulir</string>
+    <string name="nama_lengkap">NAMA LENGKAP</string>
+    <string name="jenis_kelamin">JENIS KELAMIN</string>
+    <string name="status_perkawinan">STATUS PERKAWINAN</string>
+    <string name="alamat">ALAMAT</string>
+
+    <string name="formulir_pendaftaran">Formulir Pendaftaran</string>
+    <string name="isi_nama_lengkap">Isikan nama lengkap</string>
+    <string name="isi_alamat">Isikan alamat</string>
+    <string name="laki_laki">Laki-laki</string>
+    <string name="perempuan">Perempuan</string>
+    <string name="janda">Janda</string>
+    <string name="lajang">Lajang</string>
+    <string name="duda">Duda</string>
+    <string name="submit">Submit</string>
+
+    <string name="data_berhasil">Data Berhasil Disimpan</string>
+    <string name="button_ok">OK</string>
 </resources>
