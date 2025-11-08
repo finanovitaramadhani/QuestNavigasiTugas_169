@@ -31,3 +31,7 @@ fun AppNavigation(
             modifier = Modifier.padding(isiRuang)
         ) {
 
+            composable(route = Navigasi.Splash.name) {
+                SplashScreen(navController = navController)
+            }
+
